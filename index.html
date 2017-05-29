@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hythe Window Cleaning</title>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta name="description" content="Professional, personal window, gutter, fascia and cladding cleaners. Jet washing service available for both business and personal addresses. Inside and out finishing service. Hythe">
+    <meta name="author" content="Matt Rayner - mattrayner.co.uk">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/fonts/fonts.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+    
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+  </head>
+
+  <body>
+
+  <div class="container">
+	<div class="masthead">
+      <div class="row-fluid">
+       	<a href="http://www.hythewindowcleaning.co.uk" class="ir" id="mastheadlogo"><h3 class="muted">Hythe Window Cleaning</h3></a>
+       	<div class="span4 pull-right" id="masthead-quote">
+        	<p>CALL NOW FOR YOUR <span>FREE</span> QUOTE</p>
+        	<p class="masthead-telephone">07595 981 921</p>
+        </div>
+      </div>
+        <div class="navbar">
+        <div class="navbar-inner">
+          <div class="container">
+            <ul class="nav">
+              <li class="active"><a href="http://www.hythewindowcleaning.co.uk/">Home</a></li>
+              <li><a href="http://www.hythewindowcleaning.co.uk/services">Services</a></li>
+              <li><a href="http://www.hythewindowcleaning.co.uk/gallery">Gallery</a></li>
+              <li><a href="http://www.hythewindowcleaning.co.uk/testimonials">Testimonials</a></li>
+              <li><a href="http://www.hythewindowcleaning.co.uk/contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div><!-- /.navbar -->
+    </div>
+    <!-- End of header -->
+
+
+      <!-- Jumbotron -->
+      <div class="jumbotron">
+      	<div class="row-fluid" id="slider">
+	        <a href="http://www.hythewindowcleaning.co.uk/services#driveway">
+	        	<h1>Driveway cleaning</h1>
+				<img src="assets/img/slider/driveway.png" />
+			</a>
+	        <a href="http://www.hythewindowcleaning.co.uk/services#quote">
+	        	<h1>Professional cleaning with a personal touch...</h1>
+				<img src="assets/img/slider/professional-cleaning.png" />
+			</a>
+			<a href="http://www.hythewindowcleaning.co.uk/services#homeandbusiness">
+	        	<h1>From business projects...</h1>
+				<img src="assets/img/slider/business.png" />
+			</a>
+			<a href="http://www.hythewindowcleaning.co.uk/services#quote">
+	        	<h1>To finishing touches.</h1>
+				<img src="assets/img/slider/finishing.png" />
+			</a>
+      	</div>
+      </div>
+      
+      <div id="home-quotecycle" class="row-fluid">
+      	<p>“We trust Tom and Hythe Window Cleaning to clean inside as well as outside!” - Pammie Head</p>
+      	<p>“Probably the best window cleaner in town... Couldn't be happier.” - Rebecca Kellaway</p>
+      </div>
+      
+      <!-- Example row of columns -->
+      <div class="row-fluid homepage-image-boxes">
+        <a href="http://www.hythewindowcleaning.co.uk/services#gutters" class="span3">
+          <h2>Gutters</h2>
+          <img src="assets/img/home-gutter.png" />
+        </a>
+        <a href="http://www.hythewindowcleaning.co.uk/services#fascias" class="span3">
+          <h2>Fascias</h2>
+          <img src="assets/img/home-fascias.png" />
+       </a>
+       <a href="http://www.hythewindowcleaning.co.uk/services#cladding" class="span3">
+          <h2>Cladding</h2>
+          <img src="assets/img/home-cladding.png" />
+       </a>
+       <a href="http://www.hythewindowcleaning.co.uk/services#jetwashing" class="span3">
+          <h2>Jet Washing</h2>
+          <img src="assets/img/home-jetwash.png" />
+       </a>
+      </div>
+
+      <hr>
+
+      <div class="footer">
+        <div class="span6">Copyright &copy; 2015 <a href="http://www.hythewindowcleaning.co.uk/">Hythe Window Cleaning</a></div>
+        <div class="span6 pull-right">Website by <a href="http://www.mattrayner.co.uk/">Matthew Rayner</a></div>
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.3.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.cycle.lite.js"></script>
+    
+    <script>
+    	$(window).load(function(){
+	        var $root = $('html, body');
+	        $('a').click(function() {
+	            var href = $.attr(this, 'href');
+	            $root.animate({
+	                scrollTop: $(href).offset().top
+	            }, 500, function () {
+	                window.location.hash = href;
+	            });
+	            return false;
+	        });
+        });
+    </script>
+	<!-- End of footer -->
+    
+    <script>
+	    $(window).load(function(){
+		   $('#slider').cycle({
+		        timeout: 3000,
+		        pager:  '#slider-nav',
+				slideExpr: 'a'
+		    }); 
+		    
+		    $('#home-quotecycle').cycle({
+		        timeout: 6000,
+				slideExpr: 'p'
+		    }); 
+	    });
+    </script>
+    
+    
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-43588624-1', 'hythewindowcleaning.co.uk');
+  ga('send', 'pageview');
+
+</script>
+  </body>
+</html>
